@@ -1,0 +1,26 @@
+{
+  "recommendations": [
+    "rvest.vs-code-prettier-eslint",
+    "aaron-bond.better-comments",
+    "antfu.icons-carbon",
+    "streetsidesoftware.code-spell-checker",
+    "Dart-Code.dart-code",
+    "EditorConfig.EditorConfig",
+    "antfu.theme-vitesse",
+    "dbaeumer.vscode-eslint",
+    "file-icons.file-icons",
+    "christian-kohler.npm-intellisense",
+    "DavidAnson.vscode-markdownlint",
+    "PKief.material-icon-theme",
+    "zhuangtongfa.material-theme",
+    "ms-python.python",
+    "antfu.slidev",
+    "sysoev.language-stylus",
+    "wayou.vscode-todo-highlight",
+    "OBKoro1.korofileheader",
+    "Gruntfuggly.todo-tree",
+    "Vue.vscode-typescript-vue-plugin",
+    "Vue.volar",
+    "znck.grammarly"
+  ]
+}

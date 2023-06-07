@@ -1,0 +1,659 @@
+{
+  /**
+   * editor 编辑器配置
+   */
+  "editor.suggestSelection": "first",
+  "editor.fontSize": 16,
+  "editor.detectIndentation": true,
+  "editor.definitionLinkOpensInPeek": true,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.fontFamily": "'Fira Code','Fira Mono for Powerline'",
+  "editor.fontLigatures": true,
+  "editor.links": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": false,
+    "source.organizeImports": false
+  },
+  "editor.find.globalFindClipboard": true,
+  "editor.gotoLocation.multipleDeclarations": "gotoAndPeek",
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.formatOnPaste": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.renderControlCharacters": true,
+  "editor.multiCursorModifier": "alt",
+  "editor.snippetSuggestions": "top",
+  "editor.largeFileOptimizations": true,
+  "editor.wordWrap": "on",
+  /**
+   * 扩展设置
+   */
+  "extensions.closeExtensionDetailsOnViewChange": false,
+  /**
+   * workbench
+   */
+  "window.autoDetectColorScheme": true,
+  "workbench.preferredDarkColorTheme": "One Dark Pro",
+  "workbench.preferredLightColorTheme": "Vitesse Light Soft",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.settings.useSplitJSON": true,
+  "workbench.list.smoothScrolling": true,
+  "workbench.productIconTheme": "icons-carbon",
+  "workbench.remote.experimental.showStartListEntry": true,
+  "workbench.editor.splitInGroupLayout": "vertical",
+  "workbench.editorAssociations": {
+    "*.pck": "default",
+    "*.dex": "default",
+    "*.xml": "default",
+    "*.arsc": "default"
+  },
+  "workbench.activityBar.visible": true,
+  "workbench.fontAliasing": "antialiased",
+  "workbench.list.smoothScrolling": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.tree.expandMode": "singleClick",
+  "workbench.tree.indent": 10,
+  /**
+   * 一些特定文件的格式化配置
+   */
+  "[markdown]": {
+    "editor.defaultFormatter": "darkriszty.markdown-table-prettify"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": false,
+      "source.fixAll.eslint": true
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": false,
+      "source.fixAll.eslint": true,
+      "source.fixAll.stylelint": true
+    },
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
+  "[stylus]": {
+    "editor.defaultFormatter": "thisismanta.stylus-supremacy"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false
+  },
+  /**
+   * eslint 配置
+   */
+  "eslint.lintTask.enable": true,
+  "eslint.format.enable": true,
+  "eslint.ignoreUntitled": true,
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "vue",
+    "typescript",
+    "typescriptreact",
+    "react",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "json5"
+  ],
+  /**
+   * 终端配置
+   */
+  "terminal.integrated.fontFamily": "'Hack Nerd Font'",
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.confirmOnExit": "always",
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.macOptionClickForcesSelection": true,
+  /**
+   * emmet语法
+   */
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.showAbbreviationSuggestions": true,
+  "emmet.showExpandedAbbreviation": "always",
+  "emmet.includeLanguages": {
+    "vue-html": "html",
+    "javascript": "javascriptreact",
+    "wxml": "html"
+  },
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx",
+    "vue-html": "html",
+    "wxml": "html",
+    "vue": "html"
+  },
+  "emmet.variables": {
+    "lang": "zh-CN",
+    "charset": "UTF-16"
+  },
+  /**
+   * git配置
+   */
+  "git.enableSmartCommit": true,
+  "git.rebaseWhenSync": true,
+  "git.autofetch": true,
+  "git.openRepositoryInParentFolders": "never",
+  /**
+   * files 配置
+   */
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/node_modules": false,
+    "/node_modules": false,
+    "**/**/node_modules": false,
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.vscode": false,
+    "**/.factorypath": true,
+    "**/tmp": true,
+    "**/bower_components": true,
+    "**/dist": false
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/tmp/**": true,
+    "**/bower_components/**": true,
+    "**/dist/**": true
+  },
+  "files.associations": {
+    "*.html": "html",
+    "*.vue": "vue",
+    "*.env": "yaml",
+    "*.stylus": "stylus",
+    "tsconfig.json": "jsonc",
+    "jsconfig.json": "jsonc",
+    "*.jsx": "javascriptreact",
+    "*.cjson": "jsonc",
+    "*.wxss": "css",
+    "*.wxs": "javascript",
+    "*.css": "css",
+    "*.tsx": "typescriptreact"
+  },
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "files.hotExit": "onExit",
+  /**
+   * search
+   */
+  "search.showLineNumbers": true, // 可能是让 CPU 炸了的罪魁祸首
+  "search.smartCase": true,
+  "search.followSymlinks": false,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true
+  },
+  /**
+   * fileheader 选项是在文件开头加上一行主题文本，以便在每个文件开头显示文件类
+   */
+  "fileheader.customMade": {
+    "Author": "Mark",
+    "Date": "Do not edit",
+    "LastEditors": "Mark",
+    "LastEditTime": "Do not edit",
+    "Description": "file content"
+  },
+  "fileheader.configObj": {
+    "autoAdd": false // 默认开启
+  },
+  /**
+   * stylus 格式化 配置
+   */
+  "stylusSupremacy.insertColons": false, // 是否插入冒号
+  "stylusSupremacy.insertSemicolons": false, // 是否插入分好
+  "stylusSupremacy.insertBraces": false, // 是否插入大括号
+  "stylusSupremacy.insertNewLineAroundImports": true, // import之后是否换行
+  "stylusSupremacy.insertNewLineAroundBlocks": true, // 两个选择器中是否换行
+  "stylusSupremacy.alwaysUseAtBlock": true,
+  "stylusSupremacy.alwaysUseExtends": true,
+  "stylusSupremacy.alwaysUseImport": true,
+  "stylusSupremacy.alwaysUseNoneOverZero": true,
+  /**
+   * cSpell
+   */
+  "cSpell.enableFiletypes": ["dart"],
+  "cSpell.languageSettings": [
+    {
+      "languageId": "*",
+      "locale": "en",
+      "dictionaries": ["wordsEn"]
+    },
+    {
+      "languageId": "*",
+      "locale": "en-US",
+      "dictionaries": ["wordsEn"]
+    },
+    {
+      "languageId": "*",
+      "locale": "en-GB",
+      "dictionaries": ["wordsEnGb"]
+    },
+    {
+      "languageId": "*",
+      "dictionaries": ["companies", "softwareTerms", "misc"]
+    },
+    {
+      "languageId": "python",
+      "allowCompoundWords": true,
+      "dictionaries": ["python"]
+    },
+    {
+      "languageId": "go",
+      "allowCompoundWords": true,
+      "dictionaries": ["go"]
+    },
+    {
+      "languageId": "javascript",
+      "dictionaries": ["typescript", "node"]
+    },
+    {
+      "languageId": "javascriptreact",
+      "dictionaries": ["typescript", "node"]
+    },
+    {
+      "languageId": "typescript",
+      "dictionaries": ["typescript", "node"]
+    },
+    {
+      "languageId": "typescriptreact",
+      "dictionaries": ["typescript", "node"]
+    },
+    {
+      "languageId": "html",
+      "dictionaries": ["html", "fonts", "typescript", "css"]
+    },
+    {
+      "languageId": "vue",
+      "dictionaries": ["html", "fonts", "typescript", "css"]
+    },
+    {
+      "languageId": "php",
+      "dictionaries": ["php", "html", "fonts", "css", "typescript"]
+    },
+    {
+      "languageId": "css",
+      "dictionaries": ["fonts", "css"]
+    },
+    {
+      "languageId": "less",
+      "dictionaries": ["fonts", "css"]
+    },
+    {
+      "languageId": "scss",
+      "dictionaries": ["fonts", "css"]
+    }
+  ],
+  "cSpell.userWords": [
+    "0",
+    "1",
+    "22",
+    "a",
+    "antd",
+    "api",
+    "autofetch",
+    "bindingx",
+    "bsapp",
+    "build",
+    "camelize",
+    "Cascader",
+    "childrens",
+    "Consolas",
+    "darkriszty",
+    "datetimerange",
+    "dayjs",
+    "desc",
+    "donot",
+    "dont",
+    "enabled",
+    "environment",
+    "equitys",
+    "esbenp",
+    "esbuild",
+    "fileheader",
+    "fira",
+    "gcanvas",
+    "get",
+    "githubusercontent",
+    "gitlens",
+    "group",
+    "hailaotiandi",
+    "hailehui",
+    "iconfont",
+    "index",
+    "initwechatapi",
+    "interactjs",
+    "ipalfish",
+    "ipxm",
+    "ipxr",
+    "is",
+    "isipx",
+    "jsbridgeBuildType",
+    "jsonc",
+    "jsonp",
+    "Keymap",
+    "lines",
+    "map",
+    "mbridge",
+    "message",
+    "mfelibs",
+    "mixins",
+    "mkdirp",
+    "module",
+    "monospace",
+    "nargs",
+    "new",
+    "ngsw",
+    "onloading",
+    "onrefresh",
+    "popperjs",
+    "portfinder",
+    "postcss",
+    "preload",
+    "proto",
+    "pylint",
+    "qrcode",
+    "request",
+    "resourse",
+    "restructuredtext",
+    "rgba",
+    "rprint",
+    "scrollend",
+    "scroller",
+    "sentryclirc",
+    "show",
+    "sider",
+    "solt",
+    "streetsidesoftware",
+    "styl",
+    "submenu",
+    "swiper",
+    "tarojs",
+    "todohighlight",
+    "tsmerge",
+    "tweens",
+    "typescript",
+    "uglifyjs",
+    "umijs",
+    "unit",
+    "utools",
+    "version",
+    "vetur",
+    "visualstudio",
+    "vite",
+    "vsicons",
+    "vsmarketplacebadge",
+    "vuepress",
+    "vuex",
+    "weapp",
+    "wechat",
+    "weex",
+    "weixin",
+    "wx",
+    "xgplayer",
+    "xlink",
+    "วนลด"
+  ],
+  "cSpell.language": "en,en-GB,en-US",
+  "cSpell.allowCompoundWords": true,
+  /**
+   * gitlens
+   */
+  "gitlens.advanced.messages": {
+    "suppressLineUncommittedWarning": true
+  },
+  /**
+   * python
+   */
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Args": ["--max-line-length=200", "--ignore=E302,E305"],
+  "python.linting.pylintEnabled": true,
+  "python.linting.maxNumberOfProblems": 10,
+  "python.linting.pylintPath": "pylint",
+  "python.terminal.activateEnvironment": true,
+  "python.linting.enabled": true,
+  "python.linting.lintOnSave": true,
+  "python.autoComplete.extraPaths": [
+    "${env:SPARK_HOME}/python",
+    "${env:SPARK_HOME}/python/pyspark",
+    "/Users/xixuebin/PycharmProjects/yeahmobi/aws-glue-libs",
+    "/Users/xixuebin/PycharmProjects/yeahmobi/aws-glue-libs/awsglue"
+  ],
+  "python.formatting.provider": "autopep8",
+  "python.formatting.autopep8Args": [
+    "--max-line-length",
+    "120",
+    "--experimental"
+  ],
+  "python.envFile": "${workspaceFolder}/.vscode/.env",
+  "python.formatting.autopep8Path": "yapf",
+  "python.formatting.yapfArgs": [
+    "--style",
+    "{based_on_style: chromium, indent_width: 4}"
+  ],
+  "python.linting.pydocstyleArgs": ["--ignore=D103,D100"],
+  "python.analysis.extraPaths": [
+    "${env:SPARK_HOME}/python",
+    "${env:SPARK_HOME}/python/pyspark",
+    "/Users/xixuebin/PycharmProjects/yeahmobi/aws-glue-libs",
+    "/Users/xixuebin/PycharmProjects/yeahmobi/aws-glue-libs/awsglue"
+  ],
+  "python.languageServer": "Pylance",
+  "python.diagnostics.sourceMapsEnabled": true,
+  "python.linting.pydocstyleEnabled": true,
+  /**
+   * npm-intellisense
+   */
+  "npm-intellisense.showBuildInLibs": true,
+  "npm-intellisense.scanDevDependencies": true,
+  "npm-intellisense.packageSubfoldersIntellisense": true,
+  /**
+   * todohighlight 插件
+   */
+  "todohighlight.toggleURI": true,
+  "todohighlight.exclude": [
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/dist/**",
+    "**/build/**",
+    "**/.vscode/**",
+    "**/.github/**",
+    "**/_output/**",
+    "**/*.min.*",
+    "**/*.map",
+    "**/.next/**"
+  ],
+  "todohighlight.keywords": [
+    "DEBUG:",
+    "REVIEW:",
+    {
+      "text": "MEANING",
+      "color": "blue",
+      "backgroundColor": "#fff"
+    },
+    {
+      "text": "NOTE:",
+      "color": "#ff0000",
+      "backgroundColor": "yellow",
+      "overviewRulerColor": "grey"
+    },
+    {
+      "text": "HACK:",
+      "color": "#000",
+      "isWholeLine": false
+    },
+    {
+      "text": "TODO:",
+      "color": "red",
+      "border": "1px solid red",
+      "borderRadius": "2px", //NOTE: using borderRadius along with `border` or you will see nothing change
+      "backgroundColor": "rgba(0,0,0,.2)"
+      //other styling properties goes here ...
+    }
+  ],
+  /**
+   * markdown config
+   */
+  "markdown.preview.breaks": true,
+  "markdownlint.config": {
+    "no-hard-tabs": false,
+    "first-line-heading": false,
+    "no-trailing-punctuation": false,
+    "no-inline-html": false,
+    "no-duplicate-header": false
+  },
+  "markdownlint.run": "onSave",
+  "better-comments.highlightPlainText": true,
+  "better-comments.tags": [
+    {
+      "tag": "!",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "?",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "//",
+      "color": "#474747",
+      "strikethrough": true,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "todo",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "*",
+      "color": "#98C379",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    }
+  ],
+  /**
+   * typescript
+   */
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.implementationsCodeLens.enabled": true,
+  /**
+   * dart
+   */
+  "dart.openDevTools": "flutter",
+  "dart.previewFlutterUiGuides": true,
+  "dart.previewFlutterUiGuidesCustomTracking": true,
+  "dart.previewHotReloadOnSaveWatcher": true,
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "code-runner.runInTerminal": true,
+  "html.format.extraLiners": "",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "merge-conflict.autoNavigateNextConflict.enabled": true,
+  "bookmarks.useWorkaroundForFormatters": true,
+  "commentTranslate.multiLineMerge": true,
+  "commentTranslate.targetLanguage": "zh-CN",
+  "yaml.format.singleQuote": true,
+  "yaml.trace.server": "messages",
+  "svg.preview.mode": "svg",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWxcIixcImN1c3RvbUxpYnJhcmllc1wiOltcIkwuc2NyYXRjaHBhZFwiXSxcInBsdWdpbnNcIjpbXSxcInJlY2VudENvbG9yc1wiOltdLFwiZm9ybWF0V2lkdGhcIjpcIjI0MFwiLFwiY3JlYXRlVGFyZ2V0XCI6ZmFsc2UsXCJwYWdlRm9ybWF0XCI6e1wieFwiOjAsXCJ5XCI6MCxcIndpZHRoXCI6ODI3LFwiaGVpZ2h0XCI6MTE2OX0sXCJzZWFyY2hcIjp0cnVlLFwic2hvd1N0YXJ0U2NyZWVuXCI6dHJ1ZSxcImdyaWRDb2xvclwiOlwiI2QwZDBkMFwiLFwiZGFya0dyaWRDb2xvclwiOlwiIzZlNmU2ZVwiLFwiYXV0b3NhdmVcIjp0cnVlLFwicmVzaXplSW1hZ2VzXCI6bnVsbCxcIm9wZW5Db3VudGVyXCI6MCxcInZlcnNpb25cIjoxOCxcInVuaXRcIjoxLFwiaXNSdWxlck9uXCI6ZmFsc2UsXCJ1aVwiOlwiXCJ9In0=",
+  "diffEditor.codeLens": true,
+  "go.toolsManagement.autoUpdate": true,
+  "redhat.telemetry.enabled": true,
+  "js/ts.implicitProjectConfig.experimentalDecorators": true,
+  "todo-tree.highlights.enabled": true,
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "[ ]",
+    "[x]"
+  ],
+  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+  "quokka.automaticRestart": true,
+  "quokka.compactMessageOutput": true,
+  "leetcode.endpoint": "leetcode-cn",
+  "leetcode.defaultLanguage": "javascript",
+  "leetcode.workspaceFolder": "/Users/mark/.leetcode",
+  "Codegeex.Privacy": true,
+  "minapp-vscode.disableAutoConfig": true,
+  "appworks.materialSources": [],
+  "leetcode.hint.configWebviewMarkdown": false,
+  "vsicons.dontShowNewVersionMessage": true
+}
