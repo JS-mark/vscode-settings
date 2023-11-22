@@ -35,15 +35,16 @@
   /**
    * workbench
    */
+  // 根据自动方案自动切换
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.editor.empty.hint": "hidden",
   "window.autoDetectColorScheme": true,
   "workbench.preferredDarkColorTheme": "One Dark Pro",
   "workbench.preferredLightColorTheme": "Vitesse Light Soft",
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Vitesse Light Soft",
+  "workbench.iconTheme": "vscode-icons",
   "workbench.settings.useSplitJSON": true,
   "workbench.list.smoothScrolling": true,
   "workbench.productIconTheme": "icons-carbon",
-  "workbench.remote.experimental.showStartListEntry": true,
   "workbench.editor.splitInGroupLayout": "vertical",
   "workbench.editorAssociations": {
     "*.pck": "default",
@@ -51,7 +52,6 @@
     "*.xml": "default",
     "*.arsc": "default"
   },
-  "workbench.activityBar.visible": true,
   "workbench.fontAliasing": "antialiased",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.tree.expandMode": "singleClick",
@@ -74,7 +74,7 @@
       "source.fixAll": false,
       "source.fixAll.eslint": true
     },
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "[vue]": {
     "editor.formatOnSave": false,
@@ -98,10 +98,10 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
   },
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -157,7 +157,7 @@
   "emmet.includeLanguages": {
     "vue-html": "html",
     "javascript": "javascriptreact",
-    "wxml": "html"
+    "sjs": "javascript"
   },
   "emmet.syntaxProfiles": {
     "javascript": "jsx",
@@ -185,6 +185,7 @@
     "**/.hg": true,
     "**/CVS": true,
     "**/.DS_Store": true,
+    "**/Thumbs.db": true,
     "**/node_modules": false,
     "/node_modules": false,
     "**/**/node_modules": false,
@@ -195,7 +196,8 @@
     "**/.factorypath": true,
     "**/tmp": true,
     "**/bower_components": true,
-    "**/dist": false
+    "**/dist": false,
+    "**/.byte-ide": true
   },
   "files.watcherExclude": {
     "**/.git/objects/**": true,
@@ -217,7 +219,12 @@
     "*.wxss": "css",
     "*.wxs": "javascript",
     "*.css": "css",
-    "*.tsx": "typescriptreact"
+    "*.tsx": "typescriptreact",
+    "*.ttss": "css",
+    "*.sjs": "javascript",
+    "*.ttml": "ttml",
+    "*.wxml": "ttml",
+    "*.sk": "ttml"
   },
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
@@ -408,6 +415,7 @@
     "restructuredtext",
     "rgba",
     "rprint",
+    "rspack",
     "scrollend",
     "scroller",
     "sentryclirc",
@@ -419,6 +427,7 @@
     "submenu",
     "swiper",
     "tarojs",
+    "TAURI",
     "todohighlight",
     "tsmerge",
     "tweens",
@@ -426,11 +435,14 @@
     "uglifyjs",
     "umijs",
     "unit",
+    "unplugin",
+    "utool",
     "utools",
     "version",
     "vetur",
     "visualstudio",
     "vite",
+    "vitepress",
     "vsicons",
     "vsmarketplacebadge",
     "vuepress",
@@ -455,33 +467,14 @@
   /**
    * python
    */
-  "python.linting.flake8Enabled": true,
-  "python.linting.flake8Args": ["--max-line-length=200", "--ignore=E302,E305"],
-  "python.linting.pylintEnabled": true,
-  "python.linting.maxNumberOfProblems": 10,
-  "python.linting.pylintPath": "pylint",
   "python.terminal.activateEnvironment": true,
-  "python.linting.enabled": true,
-  "python.linting.lintOnSave": true,
   "python.autoComplete.extraPaths": [
     "${env:SPARK_HOME}/python",
     "${env:SPARK_HOME}/python/pyspark",
     "/Users/xixuebin/PycharmProjects/yeahmobi/aws-glue-libs",
     "/Users/xixuebin/PycharmProjects/yeahmobi/aws-glue-libs/awsglue"
   ],
-  "python.formatting.provider": "autopep8",
-  "python.formatting.autopep8Args": [
-    "--max-line-length",
-    "120",
-    "--experimental"
-  ],
   "python.envFile": "${workspaceFolder}/.vscode/.env",
-  "python.formatting.autopep8Path": "yapf",
-  "python.formatting.yapfArgs": [
-    "--style",
-    "{based_on_style: chromium, indent_width: 4}"
-  ],
-  "python.linting.pydocstyleArgs": ["--ignore=D103,D100"],
   "python.analysis.extraPaths": [
     "${env:SPARK_HOME}/python",
     "${env:SPARK_HOME}/python/pyspark",
@@ -490,7 +483,6 @@
   ],
   "python.languageServer": "Pylance",
   "python.diagnostics.sourceMapsEnabled": true,
-  "python.linting.pydocstyleEnabled": true,
   /**
    * npm-intellisense
    */
@@ -616,43 +608,37 @@
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,
-  "diffEditor.ignoreTrimWhitespace": false,
   "code-runner.runInTerminal": true,
   "html.format.extraLiners": "",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "merge-conflict.autoNavigateNextConflict.enabled": true,
-  "bookmarks.useWorkaroundForFormatters": true,
   "commentTranslate.multiLineMerge": true,
   "commentTranslate.targetLanguage": "zh-CN",
   "yaml.format.singleQuote": true,
   "yaml.trace.server": "messages",
   "svg.preview.mode": "svg",
   "liveServer.settings.donotShowInfoMsg": true,
-  "hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWxcIixcImN1c3RvbUxpYnJhcmllc1wiOltcIkwuc2NyYXRjaHBhZFwiXSxcInBsdWdpbnNcIjpbXSxcInJlY2VudENvbG9yc1wiOltdLFwiZm9ybWF0V2lkdGhcIjpcIjI0MFwiLFwiY3JlYXRlVGFyZ2V0XCI6ZmFsc2UsXCJwYWdlRm9ybWF0XCI6e1wieFwiOjAsXCJ5XCI6MCxcIndpZHRoXCI6ODI3LFwiaGVpZ2h0XCI6MTE2OX0sXCJzZWFyY2hcIjp0cnVlLFwic2hvd1N0YXJ0U2NyZWVuXCI6dHJ1ZSxcImdyaWRDb2xvclwiOlwiI2QwZDBkMFwiLFwiZGFya0dyaWRDb2xvclwiOlwiIzZlNmU2ZVwiLFwiYXV0b3NhdmVcIjp0cnVlLFwicmVzaXplSW1hZ2VzXCI6bnVsbCxcIm9wZW5Db3VudGVyXCI6MCxcInZlcnNpb25cIjoxOCxcInVuaXRcIjoxLFwiaXNSdWxlck9uXCI6ZmFsc2UsXCJ1aVwiOlwiXCJ9In0=",
   "diffEditor.codeLens": true,
   "go.toolsManagement.autoUpdate": true,
   "redhat.telemetry.enabled": true,
   "js/ts.implicitProjectConfig.experimentalDecorators": true,
-  "todo-tree.highlights.enabled": true,
-  "todo-tree.general.tags": [
-    "BUG",
-    "HACK",
-    "FIXME",
-    "TODO",
-    "XXX",
-    "[ ]",
-    "[x]"
-  ],
-  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
   "quokka.automaticRestart": true,
   "quokka.compactMessageOutput": true,
   "leetcode.endpoint": "leetcode-cn",
   "leetcode.defaultLanguage": "javascript",
   "leetcode.workspaceFolder": "/Users/mark/.leetcode",
   "Codegeex.Privacy": true,
-  "minapp-vscode.disableAutoConfig": true,
   "appworks.materialSources": [],
   "leetcode.hint.configWebviewMarkdown": false,
-  "vsicons.dontShowNewVersionMessage": true
+  "vsicons.dontShowNewVersionMessage": true,
+  "editor.accessibilitySupport": "off",
+  "editor.linkedEditing": true,
+  "[scss]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.autopep8"
+  }
 }
