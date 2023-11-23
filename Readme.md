@@ -1,3 +1,5 @@
+Forked from [`antfu/vscode-settings`](https://github.com/JS-DevTools/version-bump-prompt)
+
 <samp><b>Mark's VS Code Settings</b></samp>
 
 [`.vscode/settings.json`](./.vscode/settings.json)<br>
